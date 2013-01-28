@@ -12,15 +12,16 @@
       <div class="container-fluid">
         <ul class="nav">
           <li>
-            <%= link_to 'ShermansTravel Content API', root_path, class: 'brand' %>
+            <%= link_to ApiTaster.config.title, root_path, class: 'brand' %>
           </li>
         </ul>
         <div class="nav-collapse collapse">
           <ul class="nav pull-right">
             <li>
-              <%= link_to 'https://cms.shermanstravel.com', target: '_blank' do %>
-                ShermansTravel CMS <i class="icon-share-alt icon-white"></i>
-              <%- end -%>
+              <%= link_to ApiTaster.config.app_url, target: '_blank' do %>
+                <%= ApiTaster.config.app_title %>
+                <i class="icon-share-alt icon-white"></i>
+              <% end %>
             </li>
           </ul>
         </div>
