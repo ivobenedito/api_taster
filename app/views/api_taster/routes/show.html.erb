@@ -24,7 +24,7 @@
         </div>
       <% else %>
         <ul class="nav nav-tabs">
-          <li class="nav-label">Request</li>
+          <li class="nav-label"><span class="label label-info">Request</span></li>
           <% if param[:url_params].present? %>
             <li<% unless param[:post_params].present? %> class="active"<% end %>><a href="#" id="url-params">URL</a></li>
           <% end %>
@@ -49,7 +49,7 @@
       <% end %>
 
       <div class="form-actions">
-        <input id="submit-api" type="submit" class="btn btn-primary pull-right"></input>
+        <input id="submit-api" type="submit" class="btn btn-primary"></input>
       </div>
 
     <% end %>
@@ -58,7 +58,7 @@
 
 <div id="show-api-response-div" class="well hidden">
   <ul class="nav nav-tabs">
-    <li class="nav-label">Response</li>
+    <li class="nav-label"><span class="label label-info">Response</span></li>
     <li class="hidden"><a href="#" id="response-info">Info</a></li>
     <li class="hidden"><a href="#" id="response-json">JSON</a></li>
     <li class="active"><a href="#" id="response-raw">Raw</a></li>
